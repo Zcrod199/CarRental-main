@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CarRental_main
 {
-    public partial class RentalForm : Form
+    public partial class KaryawanForm : Form
     {
-        public RentalForm()
+        public KaryawanForm()
         {
             InitializeComponent();
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

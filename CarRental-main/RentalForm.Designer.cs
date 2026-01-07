@@ -43,7 +43,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,15 +51,21 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(406, 422);
+            this.button4.Location = new System.Drawing.Point(547, 555);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(116, 63);
             this.button4.TabIndex = 43;
@@ -70,7 +75,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(278, 422);
+            this.button3.Location = new System.Drawing.Point(284, 555);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(122, 63);
             this.button3.TabIndex = 42;
@@ -80,7 +85,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(145, 422);
+            this.button2.Location = new System.Drawing.Point(151, 555);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 63);
             this.button2.TabIndex = 41;
@@ -90,7 +95,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(14, 422);
+            this.button1.Location = new System.Drawing.Point(20, 555);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 63);
             this.button1.TabIndex = 40;
@@ -101,17 +106,17 @@
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 491);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 624);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(868, 197);
+            this.dataGridView1.Size = new System.Drawing.Size(868, 225);
             this.dataGridView1.TabIndex = 39;
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.textBox5.Location = new System.Drawing.Point(199, 377);
+            this.textBox5.Location = new System.Drawing.Point(199, 380);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(263, 36);
@@ -150,9 +155,10 @@
             this.label7.Font = new System.Drawing.Font("Coffee Spark", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(316, 19);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(286, 44);
+            this.label7.Size = new System.Drawing.Size(218, 43);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Rental Mobil";
+            this.label7.Text = "Tranksasi";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label1
             // 
@@ -160,7 +166,7 @@
             this.label1.Font = new System.Drawing.Font("Coffee Spark", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(333, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 44);
+            this.label1.Size = new System.Drawing.Size(45, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "  ";
             // 
@@ -180,9 +186,9 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.label3.Location = new System.Drawing.Point(46, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 23);
+            this.label3.Size = new System.Drawing.Size(113, 23);
             this.label3.TabIndex = 30;
-            this.label3.Text = "Nama Pelanggan";
+            this.label3.Text = "Id_pelanngan";
             // 
             // label2
             // 
@@ -190,25 +196,15 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.label2.Location = new System.Drawing.Point(46, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 23);
+            this.label2.Size = new System.Drawing.Size(99, 23);
             this.label2.TabIndex = 27;
-            this.label2.Text = "id_rental";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(468, 84);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(410, 383);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 26;
-            this.pictureBox1.TabStop = false;
+            this.label2.Text = "id_Transaksi";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.label8.Location = new System.Drawing.Point(46, 380);
+            this.label8.Location = new System.Drawing.Point(46, 505);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 23);
             this.label8.TabIndex = 29;
@@ -230,9 +226,9 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.label5.Location = new System.Drawing.Point(46, 204);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 23);
+            this.label5.Size = new System.Drawing.Size(75, 23);
             this.label5.TabIndex = 32;
-            this.label5.Text = "Nomor Plat";
+            this.label5.Text = "Id_mobil";
             // 
             // panel1
             // 
@@ -278,11 +274,74 @@
             this.label9.TabIndex = 28;
             this.label9.Text = "Sampai Tanggal";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label10.Location = new System.Drawing.Point(46, 383);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 23);
+            this.label10.TabIndex = 46;
+            this.label10.Text = "Jaminan";
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold);
+            this.button5.Location = new System.Drawing.Point(425, 555);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(116, 63);
+            this.button5.TabIndex = 47;
+            this.button5.Text = "Show";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.textBox7.Location = new System.Drawing.Point(199, 502);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(263, 36);
+            this.textBox7.TabIndex = 48;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label11.Location = new System.Drawing.Point(46, 444);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 23);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "detail Jaminan";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(468, 84);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(410, 465);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.textBox6.Location = new System.Drawing.Point(199, 431);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(263, 36);
+            this.textBox6.TabIndex = 45;
+            // 
             // RentalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 693);
+            this.ClientSize = new System.Drawing.Size(888, 876);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button4);
@@ -307,9 +366,9 @@
             this.Name = "RentalForm";
             this.Text = "RentalForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,5 +399,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }
