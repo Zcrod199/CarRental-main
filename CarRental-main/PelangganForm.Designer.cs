@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -52,6 +51,9 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.label2.Location = new System.Drawing.Point(37, 120);
+            this.label2.Location = new System.Drawing.Point(37, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 23);
             this.label2.TabIndex = 2;
@@ -91,21 +93,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.label3.Location = new System.Drawing.Point(39, 174);
+            this.label3.Location = new System.Drawing.Point(34, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "Nama";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.label4.Location = new System.Drawing.Point(39, 225);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 23);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Jenis Kelamin";
             // 
             // label5
             // 
@@ -130,7 +122,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.textBox1.Location = new System.Drawing.Point(197, 117);
+            this.textBox1.Location = new System.Drawing.Point(197, 88);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(263, 38);
@@ -140,7 +132,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.textBox2.Location = new System.Drawing.Point(197, 171);
+            this.textBox2.Location = new System.Drawing.Point(197, 143);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(263, 33);
@@ -149,7 +141,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.textBox3.Location = new System.Drawing.Point(197, 269);
+            this.textBox3.Location = new System.Drawing.Point(197, 280);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(263, 37);
@@ -168,7 +160,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(197, 223);
+            this.comboBox1.Location = new System.Drawing.Point(197, 195);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(128, 31);
             this.comboBox1.Sorted = true;
@@ -285,12 +277,44 @@
             this.label8.TabIndex = 48;
             this.label8.Text = "detail jaminan";
             // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.textBox7.Location = new System.Drawing.Point(197, 232);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(263, 36);
+            this.textBox7.TabIndex = 49;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label4.Location = new System.Drawing.Point(39, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 23);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Jenis Kelamin";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label9.Location = new System.Drawing.Point(46, 245);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 23);
+            this.label9.TabIndex = 50;
+            this.label9.Text = "Alamat";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // PelangganForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(888, 707);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox6);
@@ -332,7 +356,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
@@ -350,5 +373,8 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label9;
     }
 }
