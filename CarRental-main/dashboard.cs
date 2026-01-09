@@ -83,5 +83,18 @@ namespace CarRental_main
         {
 
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            KaryawanForm karyawan = new KaryawanForm();
+
+            // Menampilkan Form2
+            karyawan.Show();
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
